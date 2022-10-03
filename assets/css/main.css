@@ -1764,7 +1764,11 @@ input, select, textarea {
 				width: 48px;
 				height: 48px;
 			}
-
+		.image.avatarCircular img {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+		}
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -2262,6 +2266,38 @@ input, select, textarea {
 			#main > section.four {
 				background-color: #e8edec;
 			}
+			#main > section.banner {
+				position: relative;
+				height:950px;
+				width:100%;
+				object-fit: cover;
+				background-size: cover;
+			}
+
+#videobcg {
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+#overlay {
+	position:absolute;
+    top:30px;
+    left:50px;
+    z-index:1;
+	text-decoration: double;
+}
+#logoEss {
+	position:absolute;
+    top:30px;
+    right:30px;
+    z-index:1;
+	width: 160px;
+	height: 40px;
+}
 
 /* Wide */
 
@@ -2361,6 +2397,7 @@ input, select, textarea {
 						margin-left: -1.25em;
 						line-height: 2.25em;
 					}
+				
 
 		/* Footer */
 
@@ -2631,3 +2668,7 @@ input, select, textarea {
 				}
 
 	}
+
+#bottom1 {
+	height: 30px;
+}
