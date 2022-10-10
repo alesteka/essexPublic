@@ -2285,8 +2285,8 @@ input, select, textarea {
 }
 #overlay {
 	position:absolute;
-    top:30px;
-    left:50px;
+    top:60px;
+    left:30px;
     z-index:1;
 	text-decoration: double;
 }
@@ -2671,4 +2671,6 @@ input, select, textarea {
 
 #bottom1 {
 	height: 30px;
+	overflow: auto;
 }
+
