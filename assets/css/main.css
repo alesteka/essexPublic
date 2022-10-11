@@ -2671,6 +2671,21 @@ input, select, textarea {
 
 #bottom1 {
 	height: 30px;
-	overflow: auto;
+}
+
+.alignLeft {
+	padding-left: 40px;
+	line-height: 0,7em;
+	font-weight: 500;
+}
+
+#boldStyle{
+	font-weight: bold;
+}
+
+#boldStyle.colorStyle {
+	color: black;
+	text-align: center;
+	
 }
 
