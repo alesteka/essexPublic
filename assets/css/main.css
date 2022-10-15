@@ -155,7 +155,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 700;
 		color: #666;
 	}
 
@@ -1769,6 +1769,11 @@ input, select, textarea {
 			height: 48px;
 			border-radius: 50%;
 		}
+		.image.logicG img {
+			width: 450px;
+			height: 460px;
+			float: right;
+		}
 		.image.fit {
 			display: block;
 			width: 100%;
@@ -1794,7 +1799,16 @@ input, select, textarea {
 				margin: 0 auto;
 				width: auto;
 			}
+		
+.rightL {
+	text-align: right;
+	padding-left: 10px;
+	float: right;
+}
 
+.leftL {
+	text-align: left;
+}
 /* List */
 
 	ul {
@@ -2682,10 +2696,37 @@ input, select, textarea {
 #boldStyle{
 	font-weight: bold;
 }
+#boldStyle.color {
+	color: black;
+}
 
 #boldStyle.colorStyle {
 	color: black;
 	text-align: center;
 	
+}
+
+#parStyle.one 
+{
+	right: 20px;
+}
+
+.hyphen{
+	list-style: "—";
+	font-weight: 500;
+}
+.disc{
+	list-style-type: square; 
+	font-weight: 500;
+}
+
+b.boldBlack {
+	color: black;
+	font-weight: 1000;
+}
+p.boldBlack {
+	color: black;
+	font-weight: 500;
+	padding-left: 35px;
 }
 
