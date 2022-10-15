@@ -1770,8 +1770,8 @@ input, select, textarea {
 			border-radius: 50%;
 		}
 		.image.logicG img {
-			width: 450px;
-			height: 460px;
+			width: 550px;
+			height: 400px;
 			float: right;
 		}
 		.image.fit {
@@ -2714,9 +2714,11 @@ input, select, textarea {
 .hyphen{
 	list-style: "—";
 	font-weight: 500;
+	padding-left: 50px;
 }
 .disc{
-	list-style-type: square; 
+	list-style-type: square;
+	padding-left: 50px;
 	font-weight: 500;
 }
 
