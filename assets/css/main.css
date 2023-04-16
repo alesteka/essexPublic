@@ -2852,3 +2852,31 @@ p.boldBlack {
 	float: right;
 
 }
+
+
+.parent {
+	margin: 1rem;
+	padding: 1rem 1rem;
+	text-align: center;
+  }
+  .child {
+	display: inline-block;
+	padding: 1rem 1rem;
+	vertical-align: middle;
+	margin-left: 2%;
+  }
+
+
+.grid-container-element { 
+	margin: 0rem;
+	padding: 0rem 0rem;
+	text-align: center;
+	margin-left: 20%;
+} 
+.grid-child-element { 
+	display: inline-block;
+	padding: 0rem 0rem;
+	vertical-align: middle;
+	margin-left: 5%;
+	margin-right: 5%;
+}
