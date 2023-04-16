@@ -1,0 +1,58 @@
+
+#slow-trans{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: box-shadow 500ms;
+}
+#slow-trans:hover{
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+}
+#slow-trans.FirstSection{
+    margin-top: 40px;
+    background-color: #DEDEDE;
+}
+
+#slow-trans.SecondSection {
+    
+    background-color: #EDEDED;
+}
+
+
+#slow-trans.ThirdSection {
+
+    background-color: #DEDEDE;
+    margin-bottom: 40px;
+
+}
+#slow-trans.FourthSection {
+
+    background-color: #EDEDED;
+    margin-bottom: 40px;
+
+}
+#slow-trans.FifthSection {
+
+    background-color: #DEDEDE;
+    margin-bottom: 40px;
+
+}
+#slow-trans.SeventhSection {
+
+    background-color: #DEDEDE;
+    margin-bottom: 40px;
+
+}
+#slow-trans.SixthSection {
+
+    background-color: #DEDEDE;
+    margin-bottom: 40px;
+
+}
+#slow-trans.EightSection {
+
+    background-color: #DEDEDE;
+    margin-bottom: 40px;
+
+}
+#Unit{
+    text-align: center;
+}
