@@ -2880,3 +2880,17 @@ p.boldBlack {
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
+.remove-all-styles {
+    list-style: none;
+	padding-left: 0%;
+  }
+
+
+.flex-control-thumbs {
+	margin-bottom: 0; 
+ 	}
+
+b.boldBlack.red-color-style {
+	color: red; 
+ 	}
