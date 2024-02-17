@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#curl -X POST http://127.0.0.1:8000/employee/876729420432867329/flaw -d #"type=Injection&severity=Low&description=test" --cookie "csrftoken=1cbnquRtJjOMKAf46Uk3wh6dyZnEMqzO" --#ssl-no-revoke
+
+for i in {1..5}
+do
+	curl -X POST http://127.0.0.1:8000/employee/876729420432867329/flaw -d "type=Injection&severity=Low&description=test99$i" --cookie "csrftoken=$1" --ssl-no-revoke
+done
+
+read -p "Press Enter to exit"
