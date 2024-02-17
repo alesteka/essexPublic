@@ -1,0 +1,20 @@
+Feature: Getting Familiar with a New Vehicle
+
+  Scenario: Starting the vehicle
+    Given I am on the driver's seat of a vehicle
+    When I insert the key into the ignition
+    And I turn the key to start the engine
+    Then the engine should start successfully
+
+  Scenario: Adjusting the mirrors and seat position
+    Given I am inside the vehicle
+    When I locate the mirror adjustment controls
+    And I adjust the rear-view and side mirrors for better visibility
+    And I adjust the driver's seat position for comfort
+    Then the mirrors and seat should be adjusted according to my preferences
+
+  Scenario: Testing basic controls and features
+    Given I am in control of the new vehicle
+    When I test the functionality of the headlights, turn signals, and windshield wipers
+    And I try operating the air conditioning and radio
+    Then the headlights, signals, wipers, and other basic features should work as expected
