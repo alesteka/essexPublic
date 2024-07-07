@@ -60,14 +60,14 @@
         <p id="boldStyle" class="colorStyle" style="margin-bottom: 1em;">Unit 1</p>
         <div>
           <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">In the first week we examined the importance of understanding risk management as this is an important process that empowers business with necessary tools identifying and dealing with potential risks. Some of the common steps include:</p>
-          <ul style="color:black;margin-bottom: 4vh;">
+          <ul style="color:black;margin-bottom: 4vh;text-align: justify">
             <li style="padding-right: 2vh;"><b class="boldBlack">Identifying existing risks: </b> The first step involves brainstorming. At this step, various teams come together to review sources of risks and create priority list of the risks that have to be dealt with more urgently.</li>
             <li style="padding-right: 2vh;"><b class="boldBlack">Assessing the risks: </b> Figuring out how to handle the risks, by scrutinizing the causes and possible influences on the business.</li>
             <li style="padding-right: 2vh;"><b class="boldBlack">Developing appropriate response: </b> Examining and implementing measures that can be taken to mitigate and avoid negative outcomes.</li>
             <li style="padding-right: 2vh;"><b class="boldBlack">Developing preventive mechanisms: </b> If the risks appear again, we can apply previous remediation techniques to face similar business risks.</li>
           </ul>
           <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">Similarly, many other authors point out the importance of the PDCA Mandate, which is an iterative problem-solving technique consisting of four steps to identify and improve business operations:</p>
-          <ul style="color:black;margin-bottom: 4vh;">
+          <ul style="color:black;margin-bottom: 4vh;text-align: justify">
             <li style="padding-right: 2vh;"><b class="boldBlack">P</b>lan: </b> Provides framework for operations, ideally reflecting company's mission and values.</li>
             <li style="padding-right: 2vh;"><b class="boldBlack">D</b>o: </b> Develop, implement, and test the solution. Before work is carried out, standardization of roles, responsibilities, and methods must also be established.</li>
             <li style="padding-right: 2vh;"><b class="boldBlack">C</b>heck: </b> Gathering feedback from the teams and reviewing it. This ensures the project objective's are met with the potential future adjustments.</li>
@@ -75,8 +75,8 @@
           </ul>
           <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">Additionally, we examined qualitative and quantitative risk analysis approaches to help address risks and hazards faced by an organization:</p>
           <ul style="color:black;">
-            <li style="padding-right: 2vh;"><b class="boldBlack">Qualitative approach: </b> Qualitative risk analysis is the process of evaluating and rating an identified risk based on a person’s perception or judgment.</li>
-            <li style="padding-right: 2vh;"><b class="boldBlack">Quantitative approach: </b> Quantitative risk analysis is the process of calculating risk based on data gathered. The goal of quantitative risk analysis is to further specify how much will the impact of a risk cost the business. One of the go-to standard for the latter approach is Open FAIR, which helps to understand, analyse, and quantify information risk in financial terms. Furthermore, it provides compatibility with other well known standards, for example: ISO, COSO ERM, SABSA, COBIT, NIST, and OCTAVE. The latter, additionally, consists of three phases which include building enterprise-wide security requirements, identifying infrastructural vulnerabilities, and determining security risk management strategy.</li>
+            <li style="padding-right: 2vh;text-align: justify"><b class="boldBlack">Qualitative approach: </b> Qualitative risk analysis is the process of evaluating and rating an identified risk based on a person’s perception or judgment.</li>
+            <li style="padding-right: 2vh;text-align: justify"><b class="boldBlack">Quantitative approach: </b> Quantitative risk analysis is the process of calculating risk based on data gathered. The goal of quantitative risk analysis is to further specify how much will the impact of a risk cost the business. One of the go-to standard for the latter approach is Open FAIR, which helps to understand, analyse, and quantify information risk in financial terms. Furthermore, it provides compatibility with other well known standards, for example: ISO, COSO ERM, SABSA, COBIT, NIST, and OCTAVE. The latter, additionally, consists of three phases which include building enterprise-wide security requirements, identifying infrastructural vulnerabilities, and determining security risk management strategy.</li>
           </ul>
           <p style="padding-left: 0px;margin-bottom: 2vh;">(Lecturecasts, 2024), (CFI Team, n.d.), (Cuofano, 2024), (Hargrave & James, 2022), (SafetyCulture, 2024)</p>
             </div>
@@ -85,36 +85,103 @@
     <div id="slow-trans" class="SecondSection" style="margin-top: 3%;">
       <p id="boldStyle" class="colorStyle">Unit 2</p>
       <div>
-        <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">In second unit, we discussed some of the approaches to threat modelling, which also served as the guidlines for our first threat modelling exercise:</p>
-        <ul style="color:black;margin-left: 1.7em;">
-          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>STRIDE:</u> </b> https://www.hackerone.com/knowledge-center/threat-modeling-process-frameworks-and-tools.</li>
-          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>DREAD:</u> </b> https://www.hackerone.com/knowledge-center/threat-modeling-process-frameworks-and-tools.</li>
-          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>Attack trees:</u> </b> .</li>
-          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>Attack libraries:</u> </b> .</li>
-          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>CVSS:</u> </b> .</li>
+        <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">In second unit, we discussed some of the approaches to threat modelling, which also served as the guidelines for our first threat modelling exercise:</p>
+        <ul style="color:black;margin-left: 1.7em;margin-bottom: 3vh;">
+          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>STRIDE:</u> </b> Is a Microsoft framework that focuses on the impact of various threats, including spoofing, tampering, repudiation, data leaking, privilege escalation, and denial of service.</li>
+          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>DREAD:</u> </b> is an add-on to STRIDE that helps threat modelers rank threats after identifying them. Its acronym stands for:</li>
+          <ul style="color:black;margin-left: 1.7em;margin-bottom: 0vh;">
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">D</b>amage</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">R</b>producibility</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">E</b>xploitability</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">A</b>ffectd users</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">D</b>iscoverability</li>
+          </ul>
+  
+          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>Attack trees:</u> </b>Are conceptual diagrams that show the variety of ways in which something can go wrong, and the reason why they might go wrong.</li>
+          <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack"><u>CVSS:</u> </b>is an open framework for communicating the characteristics and severity of software vulnerabilities. CVSS consists of four metric groups:</li>
+        <ul style="margin-bottom: 0.5vh;">
+  
+        <li style="padding-right: 2vh;font-weight: 400">Base: Represents the intrinsic qualities of a vulnerability that are constant over time and across user environment.</li>
+        <li style="padding-right: 2vh;font-weight: 400">Threat: Reflects the characteristics of a vulnerability that change over time.</li>
+        <li style="padding-right: 2vh;font-weight: 400">Environmental: Represents the characteristics of a vulnerability that are unique to a user's environment</li>
+        <li style="padding-right: 2vh;font-weight: 400">Supplemental: Metrics describe and measure additional extrinsic attributes of a vulnerability, intended to add context</li>
+
+      </ul>
         </ul>
         <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%; text-align: justify;">Additionally, we evaluated some of the publicly available threat modelling tools:</p>
-        <ul style="color:black;margin-left: 1.7em;margin-bottom: 1vh;">
+        <ul style="color:black;margin-left: 1.7em;margin-bottom: 1vh;text-align: justify">
           <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">OWASP Threat Dragon: </b> Is an open source threat modelling tool that is used to produce threat model diagrams as part of the safe development lifecycle.</li>
           <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">Microsoft Threat modelling Tool: </b> Open source software that aids in the detection of threats during the design phase of software projects.</li>
           <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">ThreatModeler: </b> Allows to safely build applications/infrastructure. It supports known regulatory standards like NIST, GDPR, and PCI.</li>
           <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">IriusRisk: </b> Is Security Development Lifecycle risk management platform that connects Security, Operations, and Development. It's built for integration, simplicity, scale, and speed. furthermore, it employs pre-defined components and a built-in threat and countermeasure library to enable teams to construct these models fast without relying on security professionals.</li>
         </ul>
-        <p style="padding-left: 0px;margin-bottom: 2vh;margin-left: 2em;">(Lecturecasts, 2024), (Zenarmor, n.d.)</p>
+        <p style="padding-left: 0px;margin-bottom: 2vh;margin-left: 2em;">(Lecturecasts, 2024), (Zenarmor, n.d.), (NCSC, n.d.)</p>
       </div>
     </div>
     <div id="slow-trans" class="FirstSection">
       <div class="alignLeft">
         <p id="boldStyle" class="colorStyle">Unit 3</p>
         <div>
-          <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%;padding-left: 0px;">In unit 3, we explored key concepts that helped us to understand the security vulnarabilities of a system. Through the examples of past practices and contemporary approaches, we tried to address common breaches in software development.</p>
-          <ul style="color:black;" class="hyphen1">
-            <li><b style="color: black; margin-left: 0em;" class="boldBlack"><a href="./Homework/Compiled%20vs%20Interpreted.docx" download="" style="color: black"><b class="boldBlack red-color-style">Unit - 3: Compiled vs Interpreted</b></a></b></li>
-            <li><b style="color: black; margin-left: 0em;" class="boldBlack"><a href="./Homework/Language%20Concepts.docx" download="" style="color: black"><b class="boldBlack red-color-style">Unit - 3: Main programming concepts</b></a></b></li>
-            <li><b style="color: black; margin-left: 0em;" class="boldBlack"><a href="./Homework/Unit%203%20Codio%20Activity.docx" download="" style="color: black"><b class="boldBlack red-color-style">Unit - 3: Codio Activity - Exploring Python tools and features (part 1 & 2)</b></a></b></li>
-            <li><b style="color: black; margin-left: 0em;" class="boldBlack"><a href="./Homework/Producer-consumer-mechanism.docx" download="" style="color: black"><b class="boldBlack red-color-style">Unit - 3: Codio Activity - Producer-Consumer Mechanism</b></a></b></li>
+          <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%;padding-left: 0px;text-align: justify">The main focus of 3rd unit was on detailed understanding threat modelling approaches. We discussed the difference between threats and vulnerabilities including the quides and cookbooks helping in threat modelling.</p>
+          <p class="boldBlack" style="margin-bottom: 0em;padding-right: 2%;padding-left: 0px;text-align: justify"><b style="font-weight: 900;color: black;" >Threat </b> Any circumstance or event with the potential to adversely impact organizational operations (including mission, functions, image, or reputation), organizational assets, or individuals through an information system via unauthorized access, destruction, disclosure, modification of information, and/or denial of service.</p>
+          <p class="boldBlack" style="margin-bottom: 1em;padding-right: 2%;padding-left: 0px;text-align: justify"><b style="font-weight: 900;color: black;" >Vulnerability </b> Is a weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source.</p>
+          <p class="boldBlack" style="margin-bottom: 0em;padding-right: 2%;padding-left: 0px;text-align: justify;">Selecting appropriate threat modelling approach is paramount step in every risk assessment process. For this purpose, Threat Modelling Manifesto helps us to understand and implement best practices of building, maintaining and assessing system security. The Manifesto highlights concerns about security and privacy characteristics. It is deliberately vague in order to avoid missing the important security vulnerabilities. The following four questions are therefore the rough guidelines provided to help us develop more secure applications, systems and organizations:</p>
+          <ul style="color:black;margin-left: 0em;margin-bottom: 3vh;">
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">1: </b> What are we working on?</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">2: </b> What can go wrong?</li>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">3: </b> What are we going to do about it?</li>
+            <li style="padding-right: vh;font-weight: 400"><b class="boldBlack">4: </b> Did we do a good enough job?</li>
+          </ul>
+          <p class="boldBlack" style="margin-bottom: 0em;padding-right: 2%;padding-left: 0px;">In addition to the previous unit's threat modelling frameworks, we also discussed Process for Attack Simulation and Threat Analysis (PASTA). This threat modelling framework is a risk-centric consisting of 7 stages:</p>
+          <ul style="color:black;margin-left: 0em;margin-bottom: 3vh;">
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">1:  Define Objectives</b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">1.1: </b> Identify Business Objectives</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">1.2: </b> Identify Security & Complience Requirements</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">1.3: </b> Business Impact Analysis</li>
+            </ul>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">2: Define Technical Scope </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">2.1: </b> Capture the Boundaries of the Technical Environment</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">2.2: </b> Capture Infrastructure / Application / Software Dependencies</li>
+            </ul>
+            <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">3: Application Decomposition </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">3.1: </b> Identify Use Cases / Define App Entry Points & Trust Levels</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">3.2: </b> Identify Actors / Assets / Services / Roles / Data Sources</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">3.3: </b> Data Flow Diagamming (DFD) / Trust Boundaries</li>
+            </ul>
+            <li style="padding-right: vh;font-weight: 400"><b class="boldBlack">4: Threat Analysis </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">4.1: </b> Probabilistic Attack Scenarios Analysis</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">4.2: </b> Regression Analysis on Security Events</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">4.3: </b> Threat Intelligence Correlation & Analytics</li>
+            </ul>
+            <li style="padding-right: vh;font-weight: 400"><b class="boldBlack">5: Vulnerability & Weaknesses Analysis </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">5.1: </b> Queries of Existing Vulnerability Reports & Issues Tracking</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">5.2: </b> Threat to Existing Vulnerability Mapping Using Threat Trees</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">5.3: </b> Design Flaw Analysis Using Use & Abuse Cases</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">5.4: </b> Scorings (CVSS/CWSS) / Enumerations (CWE/CVE)</li>
+            </ul>
+            <li style="padding-right: vh;font-weight: 400"><b class="boldBlack">6: Attack Modelling </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">6.1: </b> Attack Surface Analysis</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">6.2: </b> Attack Trees Development / Attack Library Mgt.</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">6.3: </b> Attack Vulnerability & Exploit Analysis Using Attack Trees</li>
+            </ul>
+
+            <li style="padding-right: vh;font-weight: 400"><b class="boldBlack">7: Risk & Impact Analysis </b></li>
+            <ul style="color:black;margin-left: 0em;margin-bottom: 0vh;">
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">7.1: </b> Qualify & Quantify Buinsess Impact</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">7.2: </b> Countermeasure Identification & Residual Risk Analysis</li>
+              <li style="padding-right: 2vh;font-weight: 400"><b class="boldBlack">7.3: </b> Risk Mitigation Strategies</li>
+            </ul>
+
           </ul>
         </div>
+        <p style="padding-left: 0px;margin-bottom: 7vh;">(Lecturecasts, 2024), (NIST, 2022)</p>
+
       </div>
     </div>
     <div id="slow-trans" class="FourthSection">
