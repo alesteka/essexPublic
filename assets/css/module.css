@@ -1,0 +1,128 @@
+/* Module page shared styles */
+
+body {
+  color: #374151;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Section cards */
+#slow-trans {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 2em 2.5em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#slow-trans:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Alternating background: even sections get off-white */
+#slow-trans:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Override old color classes — reset to auto (nth-child takes over) */
+#slow-trans.FirstSection,
+#slow-trans.SecondSection,
+#slow-trans.ThirdSection,
+#slow-trans.FourthSection,
+#slow-trans.FifthSection,
+#slow-trans.SixthSection,
+#slow-trans.SeventhSection,
+#slow-trans.EightSection {
+  background-color: unset;
+}
+
+/* Unit title */
+p#boldStyle.colorStyle {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #0d9488;
+  text-align: left !important;
+}
+
+/* Content container */
+.alignLeft {
+  padding-left: 0;
+}
+
+/* List styling */
+.alignLeft ul {
+  color: #374151;
+  padding-left: 1.5em;
+  line-height: 1.8;
+}
+
+/* Bold labels */
+.boldBlack {
+  color: #111827;
+  font-weight: 600;
+  padding-left: 0;
+}
+
+b.boldBlack {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* Homework section links */
+.homework-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1em;
+}
+
+.homework-grid a {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  background: #0d9488;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.85em;
+  text-decoration: none;
+  border: 0;
+  transition: background 0.2s;
+}
+
+.homework-grid a:hover {
+  background: #0f766e;
+  color: #fff;
+}
+
+/* Legacy grid containers for homework sections */
+.grid-container-element {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.grid-child-element ul {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+.grid-child-element ul li {
+  margin-bottom: 0.5em;
+}
+
+.grid-child-element ul li a {
+  color: #0d9488;
+  text-decoration: none;
+  border: 0;
+  font-weight: 600;
+}
+
+.grid-child-element ul li a:hover {
+  color: #0f766e;
+}
