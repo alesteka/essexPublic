@@ -86,9 +86,9 @@ input, select, textarea {
 		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
-		color: #888;
+		color: #374151;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -105,14 +105,14 @@ input, select, textarea {
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.75em;
-		color: #888;
+		color: #374151;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
-		color: #666;
+		font-weight: 400;
+		color: #111827;
 		line-height: 1.5em;
 	}
 
@@ -131,7 +131,7 @@ input, select, textarea {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #6b7280;
 		}
 
 			h2.alt strong {
@@ -156,7 +156,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 700;
-		color: #666;
+		color: #111827;
 	}
 
 	em, i {
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #0d9488;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -1952,7 +1952,7 @@ input, select, textarea {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background: #222729 url("images/overlay.png");
+			background: #0f172a;
 		}
 
 		table thead {
@@ -1977,13 +1977,9 @@ input, select, textarea {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #0d9488;
 		border: 0;
 		cursor: pointer;
-		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
-		background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
 		-moz-transition: background-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out;
@@ -1995,7 +1991,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #0f766e;
 		}
 
 		input[type="button"]:active,
@@ -2003,15 +1999,24 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #0a6860;
 		}
 
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		background: #fff;
+		border: 1px solid #e5e7eb;
+		border-radius: 8px;
+		overflow: hidden;
 		margin-bottom: 40px;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
+
+		.item:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+		}
 
 		.item header {
 			background: #fff;
@@ -2022,6 +2027,7 @@ input, select, textarea {
 
 			.item header h3 {
 				font-size: 1em;
+				color: #111827;
 			}
 
 /* Icons */
@@ -2075,8 +2081,8 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #222629 url("images/overlay.png");
-		box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+		background: #0f172a;
+		border-right: 1px solid rgba(255, 255, 255, 0.08);
 		color: #fff;
 		height: 100%;
 		left: 0;
@@ -2112,7 +2118,7 @@ input, select, textarea {
 		}
 
 			#header .icons a {
-				color: #41484c;
+				color: rgba(255, 255, 255, 0.4);
 				-moz-transition: color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out;
@@ -2120,7 +2126,7 @@ input, select, textarea {
 			}
 
 				#header .icons a:hover {
-					color: #fff;
+					color: #0d9488;
 				}
 
 	#logo {
@@ -2134,8 +2140,8 @@ input, select, textarea {
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
-			line-height: 1em;
+			font-size: 1.1em;
+			line-height: 1.2em;
 		}
 
 		#logo p {
@@ -2185,20 +2191,20 @@ input, select, textarea {
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						color: rgba(255, 255, 255, 0.3);
 						text-align: center;
 						width: 1.25em;
 						line-height: 1.75em;
 					}
 
 				#nav ul li a.active {
-					background: rgba(0, 0, 0, 0.15);
-					box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+					background: rgba(13, 148, 136, 0.15);
+					border-left: 3px solid #0d9488;
 					color: #fff;
 				}
 
 					#nav ul li a.active span:before {
-						color: #e27689;
+						color: #0d9488;
 					}
 
 /* Footer */
@@ -2206,9 +2212,9 @@ input, select, textarea {
 	#footer {
 		margin-left: 375px;
 		text-align: center;
-		background-color: #dce3e2;
+		background-color: #f1f5f9;
+		color: #6b7280;
 		padding: 3em 0 4em 0;
-		box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 		font-size: 0.8em;
 	}
 
@@ -2241,9 +2247,7 @@ input, select, textarea {
 			margin: 0;
 			overflow: hidden;
 			padding: 4em 0;
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
 		}
 
 			#main > section.dark {
@@ -2281,15 +2285,15 @@ input, select, textarea {
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #ffffff;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #f8fafc;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #f1f5f9;
 			}
 			#main > section.banner {
 				position: relative;
@@ -2502,8 +2506,8 @@ input, select, textarea {
 				width: 275px;
 				z-index: 10002;
 				width: 275px;
-				background: #222729 url("images/overlay.png");
-				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
+				background: #0f172a;
+				border-right: 1px solid rgba(255, 255, 255, 0.08);
 			}
 
 				#header .top {
